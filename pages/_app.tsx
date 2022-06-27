@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import { storyblokInit, apiPlugin } from "@storyblok/react";
 
 storyblokInit({
-  accessToken: "your-preview-token",
+  accessToken: process.env.STORY_BLOK_TOKEN,
   use: [apiPlugin]
 });
 
