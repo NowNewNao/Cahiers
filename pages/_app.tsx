@@ -1,14 +1,14 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import { storyblokInit, apiPlugin } from "@storyblok/react";
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
+import { storyblokInit, apiPlugin } from '@storyblok/react';
 
 storyblokInit({
   accessToken: process.env.STORY_BLOK_TOKEN,
-  use: [apiPlugin]
+  use: [apiPlugin],
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;
